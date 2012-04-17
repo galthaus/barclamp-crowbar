@@ -278,6 +278,8 @@ rpms:
     # sudo stuff
     - sudo
     - screen
+    - puppet
+    - puppetmaster
 
 gems:
   pkgs:
@@ -306,5 +308,3 @@ gems:
     - formtastic-1.2.4
     - xml-simple
     - libxml-ruby
-    - puppet
-    - puppetmaster
