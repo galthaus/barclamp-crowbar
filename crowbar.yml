@@ -154,6 +154,8 @@ debs:
     #- sun-java6-jre
     - dpkg-dev
     - screen
+    - puppet
+    - puppetmaster
 
 rpms:
   redhat-5.6:
@@ -304,3 +306,5 @@ gems:
     - formtastic-1.2.4
     - xml-simple
     - libxml-ruby
+    - puppet
+    - puppetmaster
