@@ -573,10 +573,11 @@ class NodeObject < ChefObject
     return {} if conduits.nil?
 
     sorted_ifs = sort_ifs
+    map = self.crowbar_ohai["detected"]["network"]
     if_remap = {}
     count_map = {}
     sorted_ifs.each do |intf|
-      speeds = if_list[intf]["speeds"]
+      speeds = map[intf]["speeds"]
       speeds.each do |speed|
         count = count_map[speed] || 1
         if_remap["#{speed}#{count}"] = intf
